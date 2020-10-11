@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\HomePageController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,9 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 
 Route::group(['prefix' => 'admin'], function () {
@@ -24,4 +24,5 @@ Route::group(['prefix' => 'admin'], function () {
 });
 
 
-Route::get('/about', 'HomePageController@about');
+Route::get('/', 'App\Http\Controllers\HomePageController@home');
+Route::get('/about', 'App\Http\Controllers\HomePageController@about');
