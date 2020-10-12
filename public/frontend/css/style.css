@@ -1,5 +1,6 @@
 body{
     overflow-x: hidden;
+
     font-family: 'Oswald', sans-serif;
     color: #25221C;
 }
@@ -11,6 +12,7 @@ h1{
 p{
     font-family: 'Roboto', sans-serif;
 }
+
 
 
 /* Navbar */
@@ -53,4 +55,28 @@ p{
 
 .intro{
     padding-top: 220px;
+
+h1{
+    font-family: 'Oswald', sans-serif;
+}
+
+.AboutMeContent{
+    border-left: 3px solid black;
+}
+
+.AboutMeHeading{
+    position: relative;  
+    }
+
+.AboutMeHeading::after {
+    display: block;
+    content: '';
+    width: 10%;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    bottom: -5px;
+    left: 45%;
+    padding-left: auto;
+
 }
