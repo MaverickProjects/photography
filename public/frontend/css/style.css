@@ -1,8 +1,56 @@
 body{
     overflow-x: hidden;
     font-family: 'Oswald', sans-serif;
+    color: #25221C;
+}
+
+h1{
+    font-family: 'Oswald' , sans-serif;
 }
 
 p{
     font-family: 'Roboto', sans-serif;
+}
+
+
+/* Navbar */
+
+.nav-item
+{
+    margin-right: 25px;
+    font-size: 18px;
+}
+
+.navbar-brand{
+    font-weight: 600;
+}
+
+
+/* Herosection */
+
+.herosection{
+    background-image: url("../img/s3.jpg");
+    width: 100%;
+    height: 100vh;
+}
+
+.intro h1{
+    font-weight: 800;
+    letter-spacing: 5px;
+    font-size: 70px;
+    padding-bottom: 20px;
+}
+
+.vp{
+    border: 3px solid black;
+    font-size: 20px;
+    padding: 10px 10px;
+    background-color: transparent;
+    position: relative;
+    left: 46%;
+    font-weight: bold;
+}
+
+.intro{
+    padding-top: 220px;
 }
