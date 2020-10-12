@@ -7,6 +7,8 @@
     <div class="intro">
         <h1 class="text-center"> I M NOAH. I M PHOTOGRAPHER </h1>
         <button class="vp">View Portfolio</button>
+    </div>
+</section>
 
 <section>
     <div class="container">
@@ -15,7 +17,6 @@
     <div class="container py-4 px-5 AboutMeContent">
         <h1 class="pb-1">Hi, I'm Noah Passionate Photographer</h1>
         <h5 class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
-
     </div>
 </section>
 
