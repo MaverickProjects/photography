@@ -4,7 +4,9 @@
     <head>
         <title>App Name - @yield('title')</title>
         @yield('meta')
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/frontend/css/style.css">
         <link rel="stylesheet" href="/frontend/css/bootstrap.min.css">
     </head>
