@@ -6,3 +6,43 @@ body{
 p{
     font-family: 'Roboto', sans-serif;
 }
+
+/* cards */
+
+.cards{
+    width: 400px;
+    height: 180px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #25221C;
+    margin-left: 200px;
+}
+.cards img{
+    height: 5rem;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.cards h1{
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.cards1{
+    width: 400px;
+    height: 180px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #25221C;
+    margin-right: 40px;
+}
+.cards1 img{
+    height: 5rem;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.cards1 h1{
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
