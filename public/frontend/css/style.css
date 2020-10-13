@@ -94,18 +94,29 @@ p{
 
 .intro{
     padding-top: 220px;
-
+}
 h1{
     font-family: 'Oswald', sans-serif;
 }
 
 .AboutMeContent{
     border-left: 3px solid black;
+
+}
+
+.AboutMeContent h1{
+    letter-spacing: 10px;
+
+    font-size: 50px;
+    font-weight: bold;
 }
 
 .AboutMeHeading{
-    position: relative;  
-    }
+    position: relative;
+    letter-spacing: 10px;
+    font-size: 60px;
+    font-weight: bold;
+}
 
 .AboutMeHeading::after {
     display: block;
@@ -118,4 +129,92 @@ h1{
     left: 45%;
     padding-left: auto;
 
+}
+
+
+/* my work */
+
+.MyWorkHeading{
+    position: relative;
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+
+.MyWorkHeading::after {
+    display: block;
+    content: '';
+    width: 10%;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    bottom: -5px;
+    left: 45%;
+    padding-left: auto;
+
+}
+.MyWorkContent{
+letter-spacing: 2px;
+}
+
+.MyWorkCards{
+    height: 500px;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+    margin-left: 180px;
+}
+
+.MyWorkCards1{
+    height: 500px;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+    margin-right: 180px;
+}
+
+.MyWorkCards img{
+    width: 500px;
+}
+.MyWorkCards1 img{
+    width: 500px;
+}
+
+.MyWorkButton{
+
+    border: 3px #25221C;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MyWorkButton button{
+    background-color: transparent;
+    border: 2px #25221C solid;
+    color: #25221C;
+    padding: 20px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* Contact Us */
+
+.ContactUsHeading{
+    position: relative;
+    letter-spacing: 10px;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.ContactUsHeading::after {
+    display: block;
+    content: '';
+    width: 10%;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    bottom: -5px;
+    left: 45%;
+    padding-left: auto;
 }
