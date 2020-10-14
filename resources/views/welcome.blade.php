@@ -124,6 +124,19 @@
 
     <div class="container">
         <h1 class="pt-5 pb-3 mb-5 text-center ContactUsHeading">Contact Us</h1>
+
+        <form action="/action_page.php">
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <div class="MyWorkButton contactUsButton">
+        <button class="button" type="submit">Submit</button>
+    </div>
+
+        </form>
     </div>
 
 </section>

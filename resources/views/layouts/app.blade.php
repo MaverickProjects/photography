@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/frontend/css/style.css">
         <link rel="stylesheet" href="/frontend/css/bootstrap.min.css">
+        <link rel = "stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
 
@@ -40,7 +41,17 @@
             @yield('content')
 
 
+<section>
+<div class="footer">
+<i class="fa fa-instagram" aria-hidden="true"></i>
+<i class="fa fa-twitter" aria-hidden="true"></i>
+<i class="fa fa-facebook" aria-hidden="true"></i>
+<i class="fa fa-linkedin" aria-hidden="true"></i>
 
+
+
+</div>
+</section>
 
 
 
