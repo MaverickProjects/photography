@@ -265,3 +265,96 @@ input[type=text], select, textarea {
     margin-left: 50px;
     margin-right: 50px;
  }
+
+
+
+
+ /* aboutPage */
+ /* .herosection */
+
+ .herosectionabout{
+    background-image: url("../img/s2.jpg");
+    width: 100%;
+    height: 97%;
+}
+
+.intro h1{
+    font-weight: 800;
+    color: white;
+    letter-spacing: 5px;
+    font-size: 70px;
+    padding-bottom: 20px;
+}
+
+/* aboutme */
+
+.aboutme{
+    margin-top: 250px;
+    margin-bottom: 250px;
+}
+
+.AboutMeContentAbout h5{
+    letter-spacing: 3px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.AboutMeHeadingAbout{
+    position: relative;
+    letter-spacing: 5px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.AboutMeHeadingAbout::after {
+    display: block;
+    content: '';
+    width: 25%;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    bottom: -5px;
+    left: 17%;
+}
+
+
+
+/* howitstarted */
+.howitstarted{
+    background-color: #25221C;
+}
+.howitstarted img{
+    width:100%;
+}
+
+.box {
+    width: 400px;
+    height: auto;
+    background-color: white;
+    color: #25221C;
+    padding: 20px;
+    position: relative;
+    margin: 40px;
+  }
+  .box.arrow-bottom:after {
+    content: " ";
+    position: absolute;
+    right: 30px;
+    bottom: -15px;
+    border-top: 15px solid white    ;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: none;
+  }
+  .boxx{
+      margin-top: 100px;
+  }
+  .box h1{
+    font-weight: bold;
+  }
+
+  .howitstarted h5{
+    color: white;
+    padding: 20px 50px;
+    font-size: 25px;
+  }
