@@ -265,3 +265,60 @@ input[type=text], select, textarea {
     margin-left: 50px;
     margin-right: 50px;
  }
+
+ /* Testimonial Section Styling */
+ 
+ .TestimonialSection{
+     background-color: lightgray;
+     border-top: lightslategrey ;
+     border-bottom: lightslategrey;
+     border-width: 2px;
+     padding-bottom: 10%;
+ }
+
+.TestimonialHeading{
+    padding: 0 0 3% 0;
+}
+
+ .slickSlider{
+     height: fit-content;
+ }
+
+ .slick-prev:before, .slick-next:before{
+    border: solid;
+    border-color: gray;
+    width: fit-content;
+    height: fit-content;
+    padding: 15px 30px;
+ }
+
+ .slick-prev{
+    left: -190px !important;
+ }
+
+ .slick-next{
+    right: -140px !important;
+ }
+
+ .slick-prev:before{
+    content: '<' !important;
+    color: gray !important;
+    font-weight: bolder !important;
+    font-size: 50 !important;
+ } 
+ 
+ .slick-next:before{
+    content: '>' !important;   
+    color: gray !important; 
+    font-weight: bolder !important;
+    font-size: 50 !important;
+ }
+ 
+ .slick-dots{
+    position: static !important;
+}
+
+.slide h1, .slide p{
+    font-weight: bold;
+    letter-spacing: 3px;
+}
