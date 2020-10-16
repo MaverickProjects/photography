@@ -14,7 +14,7 @@
 
 <section>
     <div class="container aboutme">
-        <div class="row">
+        <div class="row ">
             <div class="col-4">
                 <h1 class="pt-5 pb-3 mb-5 text-center AboutMeHeadingAbout">ABOUT ME</h1>
             </div>
@@ -29,7 +29,7 @@
     <div class="howitstarted">
         <div class="row">
             <div class="col-lg-6 ">
-                <img src="frontend\img\s2.jpg" alt="">
+                <img src="frontend\img\p1.jpg" alt="">
             </div>
             <div class="col-lg-6">
                 <div class="box boxx arrow-bottom text-center">
@@ -41,5 +41,43 @@
 
     </div>
 </section>
+
+
+<section>
+    <div class="container photogalleryy">
+        <h1 class="pt-5 pb-3 mb-5 text-center AboutMeHeading">Photo Gallery</h1>
+    </div>
+
+
+    <div class="container-fluid photogallery row ">
+        <div class="col-sm-4"><img src="frontend\img\p1.jpg" alt=""></div>
+        <div class="col-sm-4"><img src="frontend\img\p2.jpg" alt=""></div>
+        <div class="col-sm-4"><img src="frontend\img\p3.jpg" alt=""></div>
+    </div>
+    <div class="container-fluid photogallery row ">
+        <div class="col-sm-4"><img src="frontend\img\p4.jpg" alt=""></div>
+        <div class="col-sm-4"><img src="frontend\img\p5.jpg" alt=""></div>
+        <div class="col-sm-4"><img src="frontend\img\p6.jpg" alt=""></div>
+    </div>
+    <div class="container-fluid photogallery row ">
+        <div class="col-sm-4"><img src="frontend\img\s3.jpg" alt=""></div>
+        <div class="col-sm-4"><img src="frontend\img\s1.jpg" alt=""></div>
+        <div class="col-sm-4"><img src="frontend\img\s2.jpg" alt=""></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="somethingsimilar">
+        <img src="frontend\img\s2.jpg" alt="">
+        <div class="centered">
+            <h1 class="text-center">Want something similar?</h1>
+            <button class="vs">Contact Me</button>
+        </div>
+    </div>
+</section>
+
+
 
 @endsection
