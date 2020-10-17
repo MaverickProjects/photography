@@ -9,6 +9,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/frontend/css/style.css">
         <link rel="stylesheet" href="/frontend/css/bootstrap.min.css">
+        <link rel = "stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Slick Slider -->
+        <link rel="stylesheet" href="/frontend/css/slick.css">
+        <link rel="stylesheet" href="/frontend/css/slick-theme.css">
     </head>
     <body>
         
@@ -40,8 +44,39 @@
             @yield('content')
 
 
+
+
+<section>
+<div class="footer">
+<i class="fa fa-instagram" aria-hidden="true"></i>
+<i class="fa fa-twitter" aria-hidden="true"></i>
+<i class="fa fa-facebook" aria-hidden="true"></i>
+<i class="fa fa-linkedin" aria-hidden="true"></i>
+
+
+
+</div>
+</section>
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>
     <script src="/frontend/js/bootstrap.min.js"> </script>
+<script src="/frontend/js/slick.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.slickSlider').slick({
+        infinite: true,
+    dots:true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        // prevArrow: false,
+        // nextArrow: false,
+        autoplay: true,
+  slidesToShow: 1,
+        autoplaySpeed: 3000
+    });
+});
+</script>
     </body>
 </html>
