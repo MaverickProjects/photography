@@ -44,8 +44,6 @@
             @yield('content')
 
 
-<<<<<<< HEAD
-=======
 <section>
 <div class="footer">
 <i class="fa fa-instagram" aria-hidden="true"></i>
@@ -59,22 +57,19 @@
 </section>
 
 
->>>>>>> d3592150478abbb580101dcca04c4fab1129ae30
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>
     <script src="/frontend/js/bootstrap.min.js"> </script>
-<script src="/frontend/js/slick.min.js"></script>
+    <script src="/frontend/js/slick.min.js"></script>
 <script>
   $(document).ready(function(){
     $('.slickSlider').slick({
         infinite: true,
-    dots:true,
+        dots:true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        // prevArrow: false,
-        // nextArrow: false,
         autoplay: true,
-  slidesToShow: 1,
+        slidesToShow: 1,
         autoplaySpeed: 3000
     });
 });

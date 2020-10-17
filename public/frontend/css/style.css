@@ -1,6 +1,5 @@
-body{
+body, html{
     overflow-x: hidden;
-
     font-family: 'Oswald', sans-serif;
     color: #25221C;
 }
@@ -20,7 +19,7 @@ p{
     height: 180px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     background-color: #25221C;
-    margin-left: 200px;
+    display: flex;
 }
 .cards img{
     height: 5rem;
@@ -33,26 +32,6 @@ p{
     margin-top: 50px;
     margin-left: 50px;
 }
-
-.cards1{
-    width: 400px;
-    height: 180px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    background-color: #25221C;
-    margin-right: 40px;
-}
-.cards1 img{
-    height: 5rem;
-    margin-top: 40px;
-    margin-left: 20px;
-}
-
-.cards1 h1{
-    font-size: 30px;
-    margin-top: 50px;
-    margin-left: 50px;
-}
-
 
 /* Navbar */
 
@@ -70,7 +49,7 @@ p{
 /* Herosection */
 
 .herosection{
-    background-image: url("../img/s3.jpg");
+    background-image: url("../img/s3-black.jpg");
     width: 100%;
     height: 100vh;
 }
@@ -83,13 +62,14 @@ p{
 }
 
 .vp{
-    border: 3px solid black;
+    border: 3px solid white;
     font-size: 20px;
     padding: 10px 10px;
     background-color: transparent;
     position: relative;
     left: 46%;
     font-weight: bold;
+    color: white;
 }
 
 .intro{
@@ -100,9 +80,9 @@ h1{
     font-family: 'Oswald', sans-serif;
 }
 
-.AboutMeContent{
+/* .AboutMeContent{
     border-left: 3px solid black;
-}
+} */
 
 .AboutMeHeading{
     position: relative;  
@@ -120,15 +100,13 @@ h1{
     padding-left: auto;
 
 }
-<<<<<<< HEAD
-=======
 
 
 /* my work */
 
 .MyWorkHeading{
     position: relative;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: 5px;
 }
 
@@ -149,30 +127,24 @@ letter-spacing: 2px;
 }
 
 .MyWorkCards{
-    height: 500px;
     box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
-    margin-left: 180px;
-}
-
-.MyWorkCards1{
-    height: 500px;
-    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
-    margin-right: 180px;
 }
 
 .MyWorkCards img{
-    width: 500px;
+    width: 100%;
+    height: 500px;
 }
-.MyWorkCards1 img{
-    width: 500px;
+
+.MyWorkContent h1{
+    font-size: 30px;
 }
+
 
 .MyWorkButton{
-
     border: 3px #25221C;
     display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .MyWorkButton button{
@@ -192,7 +164,7 @@ letter-spacing: 2px;
  /* Testimonial Section Styling */
 
  .TestimonialSection{
-    background-color: lightgray;
+    background-color: #25221c1a;
     border-top: lightslategrey ;
     border-bottom: lightslategrey;
     border-width: 2px;
@@ -209,10 +181,10 @@ letter-spacing: 2px;
 
 .slick-prev:before, .slick-next:before{
    border: solid;
-   border-color: gray;
+   border-color: #25221c;
    width: fit-content;
    height: fit-content;
-   padding: 15px 30px;
+   padding: 10px 30px;
 }
 
 .slick-prev{
@@ -225,14 +197,14 @@ letter-spacing: 2px;
 
 .slick-prev:before{
    content: '<' !important;
-   color: gray !important;
+   color: #25221c !important;
    font-weight: bolder !important;
    font-size: 50 !important;
 }
 
 .slick-next:before{
    content: '>' !important;
-   color: gray !important;
+   color: #25221c !important;
    font-weight: bolder !important;
    font-size: 50 !important;
 }
@@ -246,6 +218,13 @@ letter-spacing: 2px;
    letter-spacing: 3px;
 }
 
+.slide h1{
+    font-weight: 300;
+    font-size: 25px;
+}
+.slide p{
+    margin-top: 20px;
+}
 
 .slick-slide {
     outline: none !important;
@@ -319,6 +298,7 @@ input[type=text], select, textarea {
  }
 
  /* aboutPage */
+ 
  /* .herosection */
 
  .herosectionabout{
@@ -335,7 +315,7 @@ input[type=text], select, textarea {
     padding-bottom: 20px;
 }
 
-/* aboutme */
+/* about me */
 
 .aboutme{
     margin-top: 250px;
@@ -366,9 +346,8 @@ input[type=text], select, textarea {
     left: 17%;
 }
 
-
-
 /* howitstarted */
+
 .howitstarted{
     background-color: #25221C;
 }
@@ -465,6 +444,5 @@ input[type=text], select, textarea {
     padding: 10px 50px;
     background-color: transparent;
     position: relative;
-
 }
->>>>>>> d3592150478abbb580101dcca04c4fab1129ae30
+
