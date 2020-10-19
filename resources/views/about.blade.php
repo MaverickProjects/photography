@@ -15,10 +15,10 @@
 <section>
     <div class="container aboutme">
         <div class="row ">
-            <div class="col-4">
+            <div class="col-lg-4 col-md-4 col-sm-12">
                 <h1 class="pt-5 pb-3 mb-5 text-center AboutMeHeadingAbout">ABOUT ME</h1>
             </div>
-            <div class="col-8  py-4 px-5 AboutMeContentAbout">
+            <div class="col-lg-8 col-md-4 col-sm-12 py-4 px-5 AboutMeContentAbout">
                 <h5 class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
             </div>
         </div>
@@ -45,10 +45,8 @@
 
 <section>
     <div class="container photogalleryy">
-        <h1 class="pt-5 pb-3 mb-5 text-center AboutMeHeading">Photo Gallery</h1>
+        <h1 class=" text-center AboutMeHeading">Photo Gallery</h1>
     </div>
-
-
     <div class="container-fluid photogallery row ">
         <div class="col-sm-4"><img src="frontend\img\p1.jpg" alt=""></div>
         <div class="col-sm-4"><img src="frontend\img\p2.jpg" alt=""></div>

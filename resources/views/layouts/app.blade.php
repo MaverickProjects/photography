@@ -15,13 +15,13 @@
         <link rel="stylesheet" href="/frontend/css/slick-theme.css">
     </head>
     <body>
-
+        
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
             <a class="navbar-brand" href="#">Photography</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-
+          
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
@@ -60,18 +60,16 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>
     <script src="/frontend/js/bootstrap.min.js"> </script>
-<script src="/frontend/js/slick.min.js"></script>
+    <script src="/frontend/js/slick.min.js"></script>
 <script>
   $(document).ready(function(){
     $('.slickSlider').slick({
         infinite: true,
-    dots:true,
+        dots:true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        // prevArrow: false,
-        // nextArrow: false,
         autoplay: true,
-  slidesToShow: 1,
+        slidesToShow: 1,
         autoplaySpeed: 3000
     });
 });
