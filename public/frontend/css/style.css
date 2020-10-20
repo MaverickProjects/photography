@@ -20,6 +20,7 @@ p{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     background-color: #25221C;
     display: flex;
+    margin: auto;
 }
 .cards img{
     height: 5rem;
@@ -133,6 +134,7 @@ letter-spacing: 2px;
 .MyWorkCards img{
     width: 100%;
     height: 500px;
+    opacity: 1;
 }
 
 .MyWorkContent h1{
@@ -445,4 +447,8 @@ input[type=text], select, textarea {
     background-color: transparent;
     position: relative;
 }
+
+
+
+
 

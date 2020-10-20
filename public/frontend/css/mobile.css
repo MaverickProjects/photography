@@ -1,0 +1,22 @@
+@media only screen and (max-width: 768px) {
+    .intro h1 {
+        font-size: 40px;
+        padding-top: 100px;
+    }
+
+    .vp {
+        left: 29%;
+    }
+
+    .cards {
+        width: auto;
+        margin: auto;
+    }
+    .cards h1 {
+        font-size: 22px;
+    }
+    .cards img {
+        height: 3rem;
+        margin-left: 12px;
+    }
+  }
