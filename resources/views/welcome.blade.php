@@ -4,8 +4,8 @@
 @section('content')
 
 <section class="herosection">
-    <div class="intro">
-        <h1 class="text-center"> I M NOAH. I M PHOTOGRAPHER </h1>
+    <div class="intro text-center">
+        <h1 class=""> I M NOAH. I M PHOTOGRAPHER </h1>
         <button class="vp">View Portfolio</button>
     </div>
 </section>
@@ -114,7 +114,7 @@
         <h1 class="pt-5 pb-3 mb-5 text-center MyWorkHeading">People Review</h1>
     </div>
     <div class="container-fluid">
-        <div class="slickSlider col-6 text-center mx-auto">
+        <div class="slickSlider col-lg-6 col-sm-8 col-xs-8 text-center mx-auto">
             <div class="slide">
                 <h1>John Doe</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>

@@ -67,8 +67,7 @@ p{
     font-size: 20px;
     padding: 10px 10px;
     background-color: transparent;
-    position: relative;
-    left: 46%;
+    position: static;
     font-weight: bold;
     color: white;
 }

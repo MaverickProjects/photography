@@ -1,22 +1,106 @@
 @media only screen and (max-width: 768px) {
+
+    /* Home Page */
     .intro h1 {
         font-size: 40px;
-        padding-top: 100px;
     }
 
     .vp {
-        left: 29%;
+        position: static;
+    }
+
+    .cards {
+        width: auto;
+        height: auto;
+        padding: 0.15rem !important;
+        margin: auto;
+    }
+
+    .cards img {
+        height: 3.5rem;
+        margin: 15px 0px 10px 5px;
+    }
+
+    .cards h1 {
+        font-size: 25px;
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+
+    .MyWorkCards {
+        height: auto;
+        box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: auto;
+    }
+
+    .MyWorkCards img {
+        width: 100%;
+        height: auto;
+    }
+
+    .slick-slider {
+        width: 80% !important;
+    }
+
+    .slide h1 {
+        font-size: 20px;
+    }
+
+    .slide p {
+        font-size: 13px;
+    }
+
+    .slick-prev {
+        /* left: 0% !important; */
+        left: -15% !important;
+    }
+
+    .slick-next {
+        /* left: 85% !important; */
+        left: 95% !important;
+    }
+
+    .slick-prev,
+    .slick-next {
+        top: 100%;
+    }
+
+    .slick-prev:before {
+        content: '<' !important;
+    }
+
+    .slick-next:before {
+        content: '>' !important;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        color: #25221c !important;
+        font-weight: bolder !important;
+        font-size: 20 !important;
+        padding: 10px 16px;
+    }
+
+    /* Home Page Ends */
+    /* About Page */
+    .intro h1 {
+        font-size: 40px;
+        padding-top: 100px;
     }
 
     .cards {
         width: auto;
         margin: auto;
     }
+
     .cards h1 {
         font-size: 22px;
     }
+
     .cards img {
         height: 3rem;
         margin-left: 12px;
     }
-  }
+
+    /* About Page Ends */
+}
