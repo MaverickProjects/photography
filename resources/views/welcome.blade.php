@@ -24,43 +24,17 @@
 <section>
 <div class="container">
     <div class="row">
+        @foreach ($cards as $card)
         <div class=" col-lg-6 col-md-12 col-sm-12">
             <div class="p-5 ">
                     <div class="cards  p-2  text-white ">
-                        <img src="frontend\img\target.png" alt="">
-                        <h1 class="card-text">50+ Clients</h1>
+                        <img src="storage/{{$card->cardimg}}" alt="">
+                        <h1 class="card-text">{{$card->title}}</h1>
                     </div>
             </div>
         </div>
-        <div class="col-lg-6 col-md-12 col-sm-12">
-            <div class="p-5">
-                    <div class=" cards text-white">
-                        <img src="frontend\img\wedding-rings.png" alt="">
-                        <h1 class="card-text">Wedding Photoshoot</h1>
-                    </div>
-            </div>
-        </div>
+        @endforeach
     </div>
-
-    <div class="row">
-        <div class="col-lg-6 col-md-12 col-sm-12 ">
-            <div class="p-5">
-                    <div class="cards text-white ">
-                        <img src="frontend\img\photography.png" alt="">
-                        <h1 class="card-text">Professional Photoshoots</h1>
-                    </div>
-            </div>
-        </div>
-        <div class="col-lg-6 col-md-12 col-sm-12">
-            <div class="p-5">
-                    <div class=" cards text-white">
-                        <img src="frontend\img\instagram.png" alt="">
-                        <h1 class="card-text">50k+ Insta Followers</h1>
-                    </div>
-            </div>
-        </div>
-    </div>
-
 </div>
 </section>
 
@@ -74,32 +48,15 @@
     </div>
     <div class="container">
     <div class="row">
+        @foreach ($portfolios as $portfolio)
         <div class=" col-md-12 col-lg-6 ">
-                <div class="MyWorkCards">
-                    <img src="frontend\img\p3.jpg" alt="">
-                </div>
-        </div>
-        <div class="col-md-12 col-lg-6 ">
-                <div class=" MyWorkCards">
-                    <img src="frontend\img\p4.jpg" alt="">
-                </div>
-        </div>
+            <div class="MyWorkCards">
+            <img src="storage/{{$portfolio->image}}" alt="">
+            <h3 class="text-center">Portfolio detail</h3>
+            </div>
     </div>
-
-    <div class="row pt-3">
-        <div class="col-md-12 col-lg-6 ">
-                <div class=" MyWorkCards">
-                    <img src="frontend\img\p5.jpg" alt="">
-
-                </div>
-        </div>
-        <div class="col-md-12 col-lg-6 ">
-                <div class=" MyWorkCards ">
-                    <img src="frontend\img\p6.jpg" alt="">
-                </div>
-        </div>
+        @endforeach
     </div>
-
 
     <div class="MyWorkButton pt-5 pb-5">
         <button class="button">View More</button>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 11, 2020 at 10:18 AM
+-- Generation Time: Oct 25, 2020 at 09:42 AM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.7
 
@@ -20,6 +20,30 @@ SET time_zone = "+00:00";
 --
 -- Database: `photography`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cards`
+--
+
+CREATE TABLE `cards` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `title` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `cardimg` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `cards`
+--
+
+INSERT INTO `cards` (`id`, `title`, `cardimg`, `created_at`, `updated_at`) VALUES
+(1, '50+ Clients', 'cards\\October2020\\KBA7IIKW4ClKPl0ukYEZ.png', '2020-10-25 02:36:55', '2020-10-25 02:36:55'),
+(2, 'Wedding photoshoots', 'cards\\October2020\\i6tnXThSkHVTm75olmHb.png', '2020-10-25 02:37:14', '2020-10-25 02:37:14'),
+(3, 'Professional photoshoots', 'cards\\October2020\\r1NXh2xIb91yufFSSgNC.png', '2020-10-25 02:37:43', '2020-10-25 02:37:43'),
+(4, '50k+ Insta Followers', 'cards\\October2020\\Pfq8A4Tdpea6eakJms3b.png', '2020-10-25 02:38:03', '2020-10-25 02:38:03');
 
 -- --------------------------------------------------------
 
@@ -126,7 +150,16 @@ INSERT INTO `data_rows` (`id`, `data_type_id`, `field`, `type`, `display_name`, 
 (52, 6, 'status', 'select_dropdown', 'Status', 1, 1, 1, 1, 1, 1, '{\"default\":\"INACTIVE\",\"options\":{\"INACTIVE\":\"INACTIVE\",\"ACTIVE\":\"ACTIVE\"}}', 9),
 (53, 6, 'created_at', 'timestamp', 'Created At', 1, 1, 1, 0, 0, 0, NULL, 10),
 (54, 6, 'updated_at', 'timestamp', 'Updated At', 1, 0, 0, 0, 0, 0, NULL, 11),
-(55, 6, 'image', 'image', 'Page Image', 0, 1, 1, 1, 1, 1, NULL, 12);
+(55, 6, 'image', 'image', 'Page Image', 0, 1, 1, 1, 1, 1, NULL, 12),
+(56, 7, 'id', 'text', 'Id', 1, 0, 0, 0, 0, 0, '{}', 1),
+(57, 7, 'title', 'text', 'Title', 1, 1, 1, 1, 1, 1, '{}', 2),
+(58, 7, 'cardimg', 'image', 'Cardimg', 0, 1, 1, 1, 1, 1, '{}', 3),
+(59, 7, 'created_at', 'timestamp', 'Created At', 0, 1, 1, 1, 0, 1, '{}', 4),
+(60, 7, 'updated_at', 'timestamp', 'Updated At', 0, 0, 0, 0, 0, 0, '{}', 5),
+(61, 8, 'id', 'text', 'Id', 1, 0, 0, 0, 0, 0, '{}', 1),
+(62, 8, 'image', 'image', 'Image', 0, 1, 1, 1, 1, 1, '{}', 2),
+(63, 8, 'created_at', 'timestamp', 'Created At', 0, 1, 1, 1, 0, 1, '{}', 3),
+(64, 8, 'updated_at', 'timestamp', 'Updated At', 0, 0, 0, 0, 0, 0, '{}', 4);
 
 -- --------------------------------------------------------
 
@@ -162,7 +195,9 @@ INSERT INTO `data_types` (`id`, `name`, `slug`, `display_name_singular`, `displa
 (3, 'roles', 'roles', 'Role', 'Roles', 'voyager-lock', 'TCG\\Voyager\\Models\\Role', NULL, 'TCG\\Voyager\\Http\\Controllers\\VoyagerRoleController', '', 1, 0, NULL, '2020-10-11 02:11:49', '2020-10-11 02:11:49'),
 (4, 'categories', 'categories', 'Category', 'Categories', 'voyager-categories', 'TCG\\Voyager\\Models\\Category', NULL, '', '', 1, 0, NULL, '2020-10-11 02:12:00', '2020-10-11 02:12:00'),
 (5, 'posts', 'posts', 'Post', 'Posts', 'voyager-news', 'TCG\\Voyager\\Models\\Post', 'TCG\\Voyager\\Policies\\PostPolicy', '', '', 1, 0, NULL, '2020-10-11 02:12:01', '2020-10-11 02:12:01'),
-(6, 'pages', 'pages', 'Page', 'Pages', 'voyager-file-text', 'TCG\\Voyager\\Models\\Page', NULL, '', '', 1, 0, NULL, '2020-10-11 02:12:02', '2020-10-11 02:12:02');
+(6, 'pages', 'pages', 'Page', 'Pages', 'voyager-file-text', 'TCG\\Voyager\\Models\\Page', NULL, '', '', 1, 0, NULL, '2020-10-11 02:12:02', '2020-10-11 02:12:02'),
+(7, 'cards', 'cards', 'Card', 'Cards', NULL, 'App\\Card', NULL, NULL, NULL, 1, 0, '{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null,\"scope\":null}', '2020-10-25 02:25:17', '2020-10-25 02:35:58'),
+(8, 'portfolios', 'portfolios', 'Portfolio', 'Portfolios', NULL, 'App\\Portfolio', NULL, NULL, NULL, 1, 0, '{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null}', '2020-10-25 03:02:16', '2020-10-25 03:02:16');
 
 -- --------------------------------------------------------
 
@@ -240,7 +275,9 @@ INSERT INTO `menu_items` (`id`, `menu_id`, `title`, `url`, `target`, `icon_class
 (11, 1, 'Categories', '', '_self', 'voyager-categories', NULL, NULL, 8, '2020-10-11 02:12:00', '2020-10-11 02:12:00', 'voyager.categories.index', NULL),
 (12, 1, 'Posts', '', '_self', 'voyager-news', NULL, NULL, 6, '2020-10-11 02:12:02', '2020-10-11 02:12:02', 'voyager.posts.index', NULL),
 (13, 1, 'Pages', '', '_self', 'voyager-file-text', NULL, NULL, 7, '2020-10-11 02:12:03', '2020-10-11 02:12:03', 'voyager.pages.index', NULL),
-(14, 1, 'Hooks', '', '_self', 'voyager-hook', NULL, 5, 13, '2020-10-11 02:12:05', '2020-10-11 02:12:05', 'voyager.hooks', NULL);
+(14, 1, 'Hooks', '', '_self', 'voyager-hook', NULL, 5, 13, '2020-10-11 02:12:05', '2020-10-11 02:12:05', 'voyager.hooks', NULL),
+(15, 1, 'Cards', '', '_self', NULL, NULL, NULL, 15, '2020-10-25 02:25:17', '2020-10-25 02:25:17', 'voyager.cards.index', NULL),
+(16, 1, 'Portfolios', '', '_self', NULL, NULL, NULL, 16, '2020-10-25 03:02:16', '2020-10-25 03:02:16', 'voyager.portfolios.index', NULL);
 
 -- --------------------------------------------------------
 
@@ -386,7 +423,17 @@ INSERT INTO `permissions` (`id`, `key`, `table_name`, `created_at`, `updated_at`
 (38, 'edit_pages', 'pages', '2020-10-11 02:12:03', '2020-10-11 02:12:03'),
 (39, 'add_pages', 'pages', '2020-10-11 02:12:03', '2020-10-11 02:12:03'),
 (40, 'delete_pages', 'pages', '2020-10-11 02:12:03', '2020-10-11 02:12:03'),
-(41, 'browse_hooks', NULL, '2020-10-11 02:12:05', '2020-10-11 02:12:05');
+(41, 'browse_hooks', NULL, '2020-10-11 02:12:05', '2020-10-11 02:12:05'),
+(42, 'browse_cards', 'cards', '2020-10-25 02:25:17', '2020-10-25 02:25:17'),
+(43, 'read_cards', 'cards', '2020-10-25 02:25:17', '2020-10-25 02:25:17'),
+(44, 'edit_cards', 'cards', '2020-10-25 02:25:17', '2020-10-25 02:25:17'),
+(45, 'add_cards', 'cards', '2020-10-25 02:25:17', '2020-10-25 02:25:17'),
+(46, 'delete_cards', 'cards', '2020-10-25 02:25:17', '2020-10-25 02:25:17'),
+(47, 'browse_portfolios', 'portfolios', '2020-10-25 03:02:16', '2020-10-25 03:02:16'),
+(48, 'read_portfolios', 'portfolios', '2020-10-25 03:02:16', '2020-10-25 03:02:16'),
+(49, 'edit_portfolios', 'portfolios', '2020-10-25 03:02:16', '2020-10-25 03:02:16'),
+(50, 'add_portfolios', 'portfolios', '2020-10-25 03:02:16', '2020-10-25 03:02:16'),
+(51, 'delete_portfolios', 'portfolios', '2020-10-25 03:02:16', '2020-10-25 03:02:16');
 
 -- --------------------------------------------------------
 
@@ -443,7 +490,40 @@ INSERT INTO `permission_role` (`permission_id`, `role_id`) VALUES
 (37, 1),
 (38, 1),
 (39, 1),
-(40, 1);
+(40, 1),
+(42, 1),
+(43, 1),
+(44, 1),
+(45, 1),
+(46, 1),
+(47, 1),
+(48, 1),
+(49, 1),
+(50, 1),
+(51, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `portfolios`
+--
+
+CREATE TABLE `portfolios` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `portfolios`
+--
+
+INSERT INTO `portfolios` (`id`, `image`, `created_at`, `updated_at`) VALUES
+(2, 'portfolios\\October2020\\FNyjk8DR7aOI6RbGlsmR.jpg', '2020-10-25 03:02:54', '2020-10-25 03:02:54'),
+(3, 'portfolios\\October2020\\scHsYj9ZGXlLbEsgkYM9.jpg', '2020-10-25 03:03:05', '2020-10-25 03:03:05'),
+(4, 'portfolios\\October2020\\2BPn6R3OltLcUqSlELdA.jpg', '2020-10-25 03:03:15', '2020-10-25 03:03:15'),
+(5, 'portfolios\\October2020\\kw3ZWkUA0V5cEjHScwjv.jpg', '2020-10-25 03:03:22', '2020-10-25 03:03:22');
 
 -- --------------------------------------------------------
 
@@ -630,6 +710,12 @@ CREATE TABLE `user_roles` (
 --
 
 --
+-- Indexes for table `cards`
+--
+ALTER TABLE `cards`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `categories`
 --
 ALTER TABLE `categories`
@@ -708,6 +794,12 @@ ALTER TABLE `permission_role`
   ADD KEY `permission_role_role_id_index` (`role_id`);
 
 --
+-- Indexes for table `portfolios`
+--
+ALTER TABLE `portfolios`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `posts`
 --
 ALTER TABLE `posts`
@@ -756,6 +848,12 @@ ALTER TABLE `user_roles`
 --
 
 --
+-- AUTO_INCREMENT for table `cards`
+--
+ALTER TABLE `cards`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
@@ -765,13 +863,13 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `data_rows`
 --
 ALTER TABLE `data_rows`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
 
 --
 -- AUTO_INCREMENT for table `data_types`
 --
 ALTER TABLE `data_types`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -789,7 +887,7 @@ ALTER TABLE `menus`
 -- AUTO_INCREMENT for table `menu_items`
 --
 ALTER TABLE `menu_items`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `migrations`
@@ -807,7 +905,13 @@ ALTER TABLE `pages`
 -- AUTO_INCREMENT for table `permissions`
 --
 ALTER TABLE `permissions`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+
+--
+-- AUTO_INCREMENT for table `portfolios`
+--
+ALTER TABLE `portfolios`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `posts`
