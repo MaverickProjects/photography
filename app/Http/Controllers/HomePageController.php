@@ -3,13 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Card;
+use App\Portfolio;
 
 class HomePageController extends Controller
 {
 
     public function home()
     {
-        return view('welcome');
+        $cards = Card::all();
+        $portfolios = Portfolio::all();
+        return view('welcome')->with([
+            'cards' => $cards,
+            'portfolios' => $portfolios,
+         ]);
     }
 
     public function about()
