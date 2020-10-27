@@ -18,7 +18,6 @@ Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
-
 Route::get('/', 'App\Http\Controllers\HomePageController@home');
 Route::get('/about', 'App\Http\Controllers\HomePageController@about');
 Route::get('/portfolio', 'App\Http\Controllers\HomePageController@portfolio');
