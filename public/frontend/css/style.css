@@ -448,6 +448,16 @@ input[type=text], select, textarea {
 }
 
 
+/* portfolio detail */
 
+.pd{
+    padding-top: 100px;
+}
+
+.pdimg{
+    height: 400px;
+    width: 500px;
+
+}
 
 
