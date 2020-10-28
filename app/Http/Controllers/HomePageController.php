@@ -28,4 +28,9 @@ class HomePageController extends Controller
     {
         return view('portfolio');
     }
+
+    public function portfoliodetails()
+    {
+        return view('portfoliodetail');
+    }
 }
