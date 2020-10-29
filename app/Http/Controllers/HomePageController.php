@@ -29,8 +29,11 @@ class HomePageController extends Controller
         return view('portfolio');
     }
 
-    public function portfoliodetails()
+    public function portfoliodetails($name , $id)
     {
-        return view('portfoliodetail');
+        $portfolios = Portfolio::findorFail($id);
+        return view('portfoliodetail')->with([
+            'portfolios'=> $portfolios,
+        ]);
     }
 }

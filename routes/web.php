@@ -21,4 +21,5 @@ Route::group(['prefix' => 'admin'], function () {
 Route::get('/', 'App\Http\Controllers\HomePageController@home');
 Route::get('/about', 'App\Http\Controllers\HomePageController@about');
 Route::get('/portfolio', 'App\Http\Controllers\HomePageController@portfolio');
-Route::get('/portfoliodetail', 'App\Http\Controllers\HomePageController@portfoliodetails');
+Route::get('/portfoliodetail/{name}/{id}', 'App\Http\Controllers\HomePageController@portfoliodetails')->name('portfoliodetail');
+

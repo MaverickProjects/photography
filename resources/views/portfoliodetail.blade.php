@@ -7,12 +7,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <img src="/frontend/img/p1.jpg" alt="" class="pdimg">
+                <img src="{{$portfolios->details}}" alt="" class="pdimg">
 
                 </div>
 
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <h1>Portfolio One</h1>
+                    <h1>{{$portfolios->title}}</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae consequatur dignissimos in cum inventore perferendis 
                         quam sit ex numquam excepturi aperiam commodi fugiat, nobis quaerat sed consequuntur quod nesciunt repudiandae.</p>
                 </div>
