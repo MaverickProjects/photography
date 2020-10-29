@@ -49,10 +49,10 @@
     <div class="container">
     <div class="row">
         @foreach ($portfolios as $portfolio)
-        <div class=" col-md-12 col-lg-6 ">
+        <div class=" col-md-12 col-lg-6 pb-5">
             <div class="MyWorkCards">
             <img src="storage/{{$portfolio->image}}" alt="">
-            <h3 class="text-center">Portfolio detail</h3>
+            <a class="plink" href="{{url('portfoliodetail' . '/' . $portfolio->url . '/' . $portfolio->id )}}">{{$portfolio->title}}</a>
             </div>
     </div>
         @endforeach
